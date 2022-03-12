@@ -35,7 +35,7 @@ public class Person {
     @NotNull
     @NotEmpty(message = "The phone of person cannot be empty")
     @JsonProperty("telefone")
-    @Size(min = 11, max = 11)
+    @Size(min = 11, max = 13)
     private String phone;
 
     @NotNull

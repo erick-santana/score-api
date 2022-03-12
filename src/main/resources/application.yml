@@ -18,3 +18,9 @@ spring:
 logging:
   pattern:
     level: "[TraceId: %X{traceId}, SpanId: %X{spanId}]"
+
+springdoc:
+  api-docs:
+    path: "/api-docs"
+  swagger-ui:
+    path: "/swagger-ui.html"
