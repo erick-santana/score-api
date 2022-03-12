@@ -81,9 +81,12 @@ Falha: 204 - NO_CONTENT
 ## Stack
 
 - Java 11
+- Maven
 - Spring Boot
 - Spring Cloud
 - Spring Doc Open API
+- JUnit
+- Mockito
 - Lombok
 - JPA
 - Validation
