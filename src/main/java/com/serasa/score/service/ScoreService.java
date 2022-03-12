@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -34,9 +35,12 @@ public class ScoreService {
 
     public List<PersonLocationResponse> listAll() {
         var people = scoreRepository.findAll();
-        return people.stream()
-                .map(scoreAdapter::toPersonLocationResponse)
-                .collect(Collectors.toList());
+
+        return CollectionUtils.isEmpty(people)
+                ? List.of()
+                : people.stream()
+                    .map(scoreAdapter::toPersonLocationResponse)
+                    .collect(Collectors.toList());
     }
 
     public PersonResponse findById(Integer id){

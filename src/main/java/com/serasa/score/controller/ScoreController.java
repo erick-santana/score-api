@@ -38,7 +38,6 @@ public class ScoreController {
             return new ResponseEntity<>(HttpStatus.CREATED);
         }
 
-        log.info("Pessoa já cadastrada");
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
