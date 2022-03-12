@@ -8,7 +8,7 @@
 
 context-path: http://localhost:8080/api/score
 
-### Cadastrar Pessoa
+### 1. Cadastrar Pessoa
 - METHOD: POST
 - PATH: /pessoa
 - BODY: 
@@ -30,7 +30,7 @@ Sucesso: 201 - CREATED
 Falha: 204 - NO_CONTENT
 ```
 
-### Listar Pessoas
+### 2. Listar Pessoas
 - METHOD: GET
 - PATH: /pessoa
 - RESPONSE:
@@ -55,7 +55,7 @@ Sucesso: 200 - OK
 Falha: 204 - NO_CONTENT
 ```
 
-### Buscar Pessoa pelo ID
+### 3. Buscar Pessoa pelo ID
 - METHOD: GET
 - PATH: /pessoa/{id}
 - PARAMS:
